@@ -8,6 +8,6 @@
   "cleanup": true,
   "theme": "cards",
   "theme-style": "./custom.css",
-  "footer": "Developed by Tung Anh Duong. Currently in beta stage - Hiện đang trong quá trình thử nghiệm, mọi góp ý sẽ được ghi nhận",
+  "footer": "<p>&copy; C4K60 2019. Developed with <i class="fas fa-heart"></i> by <a href="https://facebook.com/tunnaduong/">Tung Anh Duong</a></p>",
   "usage-stats": false
 }
