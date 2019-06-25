@@ -8,6 +8,6 @@
   "cleanup": true,
   "theme": "cards",
   "theme-style": "./custom.css",
-  "footer": "Copyright Text",
+  "footer": "Currently in beta stage. Hiện đang trong quá trình thử nghiệm. Mọi góp ý sẽ được ghi nhận",
   "usage-stats": false
 }
