@@ -7,7 +7,7 @@
   "download-photos": "copy",
   "cleanup": true,
   "theme": "cards",
-  "theme-style": "./custom.css",
-  "footer": "Developed by Tung Anh Duong. Currently in beta stage - Hiện đang trong quá trình thử nghiệm, mọi góp ý sẽ được ghi nhận",
+  "theme-style": "https://use.fontawesome.com/releases/v5.8.2/css/all.css",
+  "footer": "<p>&copy; C4K60 2019. Developed with <i class=\"fas fa-heart\"></i> by <a href=\"https://facebook.com/tunnaduong/\">Tung Anh Duong</a></p><br><p><i class=\"fas fa-arrow-left\"></i> Quay lại trang chủ C4K60</p>",
   "usage-stats": false
 }
