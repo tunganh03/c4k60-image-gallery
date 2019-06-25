@@ -8,6 +8,6 @@
   "cleanup": true,
   "theme": "cards",
   "theme-style": "./custom.css",
-  "footer": "Currently in beta stage. Hiện đang trong quá trình thử nghiệm. Mọi góp ý sẽ được ghi nhận",
+  "footer": "Developed by Tung Anh Duong. Currently in beta stage - Hiện đang trong quá trình thử nghiệm, mọi góp ý sẽ được ghi nhận",
   "usage-stats": false
 }
