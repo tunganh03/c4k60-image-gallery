@@ -1,104 +1,105 @@
+Tài liệu này được dịch lại sang Tiếng Việt từ gautamkrishnar/github-pages-gallery cho các bạn dễ hiểu  
+Bạn có thể đọc bản Tiếng Anh ở [đây](https://github.com/gautamkrishnar/github-pages-gallery)
+Tài liệu này được dịch lại sang Tiếng Việt từ gautamkrishnar/github-pages-gallery cho các bạn dễ hiểu
+Dịch bởi Dương Tùng Anh
 # Github Pages Gallery
-Host your photo/video gallery in Github pages easily using Thumbsup & Travis CI for free.
+Host một thư viện ảnh/video trên Github pages hoàn toàn miễn phí một cách dễ dàng sử dụng Thumbsup & Travis CI
+### Tại sao dự án này được tạo ra?
 
-### Why this project?
-This project contains starter code for anyone who wants to deploy his/her photo/video galery on Github Pages, 
-**Zero Coding Needed**. Since Github pages is a free hosting service offered by Github to host static pages, it 
-offers a decent bandwidth. So it is a great choice for photographers to showcase their works. Travis-CI is a CI & CD
-platform that offers unlimited builds for open source projects. Combining the power of GitHub pages with Travis CI is
-a zero dollar solution to get your gallery online.
+Dự án này chứa mã nguồn mở cho newbies để ai cũng có thể deploy một thư viện ảnh/video của riêng mình trên Github Pages, **Không cần phải biết lập trình cũng làm được ha**. Vì Github pages là một nền tảng hosting miễn phí được cung cấp bởi Github dùng để host những trang web dạng tĩnh, nó cho bạn một dung lượng sử dụng cũng kha khá. Vì vậy nó là một sự lựa chọn hoàn hảo cho những người nhiếp ảnh gia để showcase những tác phẩm họ chụp được. Travis-CI là một nền tảng CI & CD cho phép build những dự án mã nguồn mở không giới hạn dung lượng. Kết hợp những sức mạnh của GitHub Pages với lại Travis CI sẽ là một giải pháp không mất tí tiền nào để có một thư viện online.
 
-### How to use
-Follow the steps below to get your Gallery online. You will be using GitHub web interface to do everything. 
-:wink: No frustrating CLIs:
-1. SignUp for a Github account and verify your email ID: https://github.com/join
-2. Fork this repository:
+### Cách sử dụng
+Hãy làm theo những bước dưới đây để có một thư viện online cho riêng mình. Bạn sẽ chỉ sử dụng giao diện web của GitHub để làm mọi thứ. 
+:wink: Không phải đau đầu với CLIs:
+1. Đăng ký một tài khoản Github và kiểm tra email: https://github.com/join
+2. Fork cái repo này:
 ![fork](https://user-images.githubusercontent.com/8397274/47970004-a0fd9880-e0a5-11e8-8f46-966e21d39c87.gif)
-3. Edit [config.json](config.json) by clicking on the edit button (forked repo):
+3. Chỉnh sửa file [config.json](config.json) bằng cách nhấn vào cái nút Edit (ở trong repo đã fork được):
 
 ```
 {
   "input": "./gallery",
   "output": "./build_output",
-  "title": "Photo Gallery", // Set your gallery title here
+  "title": "Photo Gallery", // Đặt cái tên thư viện của bạn ở đây
   "sort-albums-by": "title",
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "cards", // Your theme
+  "theme": "cards", // Theme mà bạn muốn chọn
   "theme-style": "./custom.css",
-  "footer": "Copyright Text", // Set your copyright text here
+  "footer": "Copyright Text", // Tuỳ chỉnh cái dòng chữ ở chân trang
   "usage-stats": false
 }
 ```
-You can chose from any of the theme below to set the value for theme key:
+Bạn có thể chọn những cái theme ở dưới đây để tuỳ chỉnh cho cái key:
 * `mosaic` - https://thumbsup.github.io/demos/themes/mosaic/
 * `cards` - https://thumbsup.github.io/demos/themes/cards/
 * `classic` - https://thumbsup.github.io/demos/themes/classic/ 
 
-You can learn more about the configuration file here: https://thumbsup.github.io/docs/3-configuration/usage/. Click on the commit changes button below the page.
+Bạn có thể tìm hiểu thêm về cách tuỳ chỉnh các thiết lập ở đây: https://thumbsup.github.io/docs/3-configuration/usage/. Click vào commit changes để đăng tải lên những thay đổi.
 
-4. Create a new account at https://travis-ci.org. Grand all access permission to Github account while signing up.
-5. After signing in enable the repo by toggling the switch:
+4. Tạo một tài khoản mới tại https://travis-ci.org. Cho phép tất cả các quyền của tài khoản Github khi bạn đăng ký.
+5. Sau khi đăng nhập xong gạt cái nút này để bật repo:
 ![travis](https://user-images.githubusercontent.com/8397274/47970260-33ec0200-e0a9-11e8-99e0-c94fe41034cf.gif)
-6. Go to the project's page by clicking on the project name:
+6. Vào trang cho dự án bằng cách bấm vô cái tên dự án:
 ![project](https://user-images.githubusercontent.com/8397274/47970299-8e855e00-e0a9-11e8-9218-64cf97402776.png)
-7. Click on More options menu > Settings:
+7. Bấm vào More > Settings:
 ![settings](https://user-images.githubusercontent.com/8397274/47970319-da380780-e0a9-11e8-837a-4a734cceba7a.png)
-8. Scroll down to "Environment Variables" section. Add a new environment variable named **GITHUB_TOKEN**:
+8. Kéo xuống phần "Environment Variables". Tạo một cái environment variable tên là **GITHUB_TOKEN**:
 ![token](https://user-images.githubusercontent.com/8397274/47970352-43b81600-e0aa-11e8-93bc-8590208b74a7.png)
-9. To set the value of the token, open a new tab and create a token from Github by visiting: https://github.com/settings/tokens.
-10. Click on **Generate New Token** button. Type any name you like. Make sure that you had selected all repo permissions given below 
-for the token: 
+9. Để chỉnh value của cái variable, mở một tab mới và lấy một cái token từ Github bằng cách truy cập: https://github.com/settings/tokens.
+10. Bấm vô **Generate New Token**. Gõ bất kỳ cái tên mà bạn muốn. Đảm báo rằng bạn chọn tất cả các quyền cho repo 
+đối với token: 
 ![authtoken](https://user-images.githubusercontent.com/8397274/47970413-f5efdd80-e0aa-11e8-96b0-50199855b9b3.png)
-11. Scroll down and click on the Generate token button. Copy the token you see on the page:
-12. Paste the token into the environment variable's value input box in Travis CI:
+11. Kéo xuống và bấm vào nút Generate token. Copy cái token bạn thấy trên trang:
+12. Paste cái token vào dòng environment variable trong Travis CI:
 ![toekenenv](https://user-images.githubusercontent.com/8397274/47970465-b1b10d00-e0ab-11e8-8873-abf122708773.png)
-13. Click on the Add button. Now you are all set.
+13. Bấm vào nút Add. OK bạn xong xuôi rồi đấy.
 
-#### Adding a new album to gallery
-1. Go to the gallery folder of the forked repo.
-2. Click on Create a new file button.
-3. Type AlbumName/.gitkeep in the input box
-4. Click Commit Changes button at the bottom.
+#### Thêm một album vào thư viện
+1. Vào cái thư mục tên là gallery ở cái repo mà bạn đã fork về.
+2. Bấm vào Create a new file.
+3. Gõ tên với dạng Tên Album/.gitkeep ở cái hộp.
+4. Bấm vô Commit Changes ở bên dưới.
 
 ![newfolder](https://media.giphy.com/media/455paOHOAWr4KWNOtg/giphy.gif)
 
-#### Adding Medias
-1. Go to gallery folder. Open any albums if any.
-2. Click on Upload files button
-3. Select files. Once it finishes upload, click Commit Changes button.
+#### Thêm video và ảnh
+1. Vào thư mục gallery. Mở tiếp bất kỳ cái album nếu có.
+2. Bấm vào Upload files
+3. Chọn ảnh hoặc video bạn muốn. Tải lên xong thì bấm Commit Changes.
 
 ![selectmedia](https://media.giphy.com/media/2uIfenjYx5anbQOEAo/giphy.gif)
 
-#### Find your website URL
-If you had done all the above steps then your website will be live now. Please check travis CI for the sttaus of the 
-deployment. You can see a build passing badge like the one below:
+#### Tìm URL cho website của bạn
+Nếu bạn hoàn thành đúng các bước trên thì website của bạn đã chạy rồi đấy. Bạn có thể check trạng thái build của website trên Travis CI. Nếu bạn thấy một cái badge có tên build passing như thế này thì chúc mừng, site của bạn đã chạy:
 
 ![travis](https://user-images.githubusercontent.com/8397274/48001817-a99ab100-e12f-11e8-915a-f7a787eb6b0b.png)
 
-#### Select gh-pages branch as the source for Github pages
-Now visit your forked repo on GitHub. Click on the settings tab. Scroll down to GitHub pages. Make sure that you have the **gh-pages** brach selected as the **Source** for the GitHub pages. 
+Nếu không thấy thì hãy chờ thêm tầm 2 phút ha để Travis nó build trang của bạn. Free mà nên hơi lâu =))) Badge nó hiện màu đỏ build failed thì ố ồ bạn gặp bug rồi đó!! Hãy rà soát lại xem bạn đã làm sai ở đâu, cố lên!!! =)))
+#### Chọn branch gh-pages làm nguồn cho Github pages
+Giờ thì quay lại cái trang repo đã fork. Click vào tab Settings. Kéo xuống phần GitHub pages. Kiểm tra lại và chắc chắn rằng branch tên **gh-pages** được lựa chọn để làm **Nguồn** cho GitHub pages. 
 
-Now you can see the URL of the site:
+Giờ thì bạn sẽ thấy cái URL của trang web:
 ![url](https://user-images.githubusercontent.com/8397274/48008065-f639b880-e13e-11e8-9f8e-72d27ad7cc30.png)
 
-Rename the repo if you need something like `/gallery'. You can even set a custom domain to your site: https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/
+Bạn có thể đổi tên cái repo nếu bạn cần một cái link đẹp như kiểu `/gallery'. Bạn cũng có thể thêm một cái tên miền tuỳ chỉnh cho trang của bạn: https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/
 
-## Limitations
-* Github Pages [terms of service](https://help.github.com/articles/github-terms-of-service/):
-> If your bandwidth usage significantly exceeds the average bandwidth usage (as determined solely by GitHub) of other GitHub customers, we reserve the right to immediately disable your account or throttle your file hosting until you can reduce your bandwidth consumption.
+## Những giới hạn
+* [Điều khoản pháp lý](https://help.github.com/articles/github-terms-of-service/) của GitHub Pages có nói:
+> If your bandwidth usage significantly exceeds the average bandwidth usage (as determined solely by GitHub) of other GitHub customers, we reserve the right to immediately disable your account or throttle your file hosting until you can reduce your bandwidth consumption.  
+Nghĩa là: Nếu băng thông của bạn dùng quá lớn hơn mức trung bình (đã được GitHub đề ra) hoặc những khách hàng GitHub khác, chúng tôi có quyền ngay lập tức khoá tài khoản của bạn hoặc làm chậm server hosting cái file của bạn cho đến khi bạn giảm mức băng thông.
 
-This is too unlikely to happen. You can easily setup [Netlify](https://www.netlify.com/) on gh-pages branch to host your site, if you need unlimited bandwidth. 
+Điều này là rất dễ xảy ra. Bạn có thể dùng [Netlify](https://www.netlify.com/) trong cái branch gh-pages để host trang web của bạn, nếu bạn muốn một băng thông không giới hạn. 
 
-* File size limit (100 MB) & Repo size limit (1 GB): Github limits the maximum usable firesize as 100MB for all files.
-This is enough for most users. It also imposes a repo size limit of 1GB. Visit https://help.github.com/articles/what-is-my-disk-quota/ for more info.
+* Giới hạn kích cỡ tệp tin (100 MB) & Giới hạn kích cỡ repo (1 GB): Github giới hạn dung lượng mỗi file dưới 100MB.
+Với nhiều người thì đây là một dung lượng khá ít vì nhỡ bạn có một cái video trên 100MB thì không thể up lên được. Và nó cũng giới hạn kích cỡ repo chỉ dưới 1GB. Truy cập https://help.github.com/articles/what-is-my-disk-quota/ để biết thêm thông tin.
 
 
-## Tools Used
-* [Travis CI](https://travis-ci.org/) For continuous deployment.
-* [Thumbsup](https://thumbsup.github.io/) for gallery static page generation.
-* [GithHub Pages]() for hosting.
+## Công cụ đã sử dụng
+* [Travis CI](https://travis-ci.org/) một nền tảng Continuous Development miễn phí.
+* [Thumbsup](https://thumbsup.github.io/) một công cụ giúp bạn tự động tạo một trang thư viện ảnh tĩnh.
+* [GithHub Pages]() để hosting các file.
 
-## Contributing
-Feel free to make any changes and submit a PR.
+## Đóng góp
+Bạn có thể tự do thay đổi và PR.
