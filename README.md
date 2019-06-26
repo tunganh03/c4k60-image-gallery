@@ -1,6 +1,5 @@
 Tài liệu này được dịch lại sang Tiếng Việt từ gautamkrishnar/github-pages-gallery cho các bạn dễ hiểu  
-Bạn có thể đọc bản Tiếng Anh ở [đây](https://github.com/gautamkrishnar/github-pages-gallery)
-Tài liệu này được dịch lại sang Tiếng Việt từ gautamkrishnar/github-pages-gallery cho các bạn dễ hiểu
+Bạn có thể đọc bản Tiếng Anh ở [đây](https://github.com/gautamkrishnar/github-pages-gallery)  
 Dịch bởi Dương Tùng Anh
 # Github Pages Gallery
 Host một thư viện ảnh/video trên Github pages hoàn toàn miễn phí một cách dễ dàng sử dụng Thumbsup & Travis CI
