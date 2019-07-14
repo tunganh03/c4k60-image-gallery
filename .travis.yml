@@ -16,8 +16,8 @@ before_install:
 - npm install -g thumbsup
 script:
 - thumbsup --config config.json
---locale vi
---home-album-name Thư viện
+- thumbsup --output locale "vi"
+- thumbsup --output home-album-name "Thư viện"
 deploy:
   provider: pages
   skip-cleanup: true
