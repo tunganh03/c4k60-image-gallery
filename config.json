@@ -10,4 +10,6 @@
   "theme-style": "./custom.css",
   "footer": "<p>&copy; C4K60 2019. Developed with love by <a href=\"https://facebook.com/tunnaduong/\">Tung Anh Duong</a></p><br><a href=\"http://c4k60.ga\">Quay lại trang chủ C4K60</a>",
   "usage-stats": false
+  "locale": "vi"
+  "home-album-name":"Thư viện"
 }
